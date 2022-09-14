@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <link rel="stylesheet" type="text/css" href="styles/footer.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -58,9 +59,34 @@
       <button href="">PLAY FREE NOW</button>
     </ul>
   </nav>
+  <!-- Body Start -->
   <body>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="media/slideshow_one.jpg" class="slideshow_image" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="media/slideshow_two.jpg" class="slideshow_image" />
+      </div>
+
+      <div class="mySlides fade">
+        <div>
+          <img src="media/slideshow_three.jpg" class="slideshow_image" />
+        </div>
+      </div>
+      <br />
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
     <script src="" async defer></script>
   </body>
+  <!-- Body End -->
+  <!-- Footer Start -->
   <footer class="footer">
     <div>
       <ul>
@@ -92,4 +118,68 @@
       </ul>
     </div>
   </footer>
+  <!-- Footer End -->
 </html>
+
+<script>
+    //slideshow
+    let slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+  
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName('mySlides');
+      let dots = document.getElementsByClassName('dot');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+  </script>
+  <!--Read more pop-up-->
+  <script>
+    //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+    $('.btn').on('click', function () {
+      $('.popup-overlay, .popup-content').addClass('active');
+      $('.btn').css({ visibility: 'hidden' });
+      Pos = findPos(this); //adjust sa pag align
+      let Left = Pos[0] - 10;
+      let Top = Pos[1] - 900;
+      $('.popup-content').css({
+        position: 'relative',
+        left: Left,
+        top: Top,
+      });
+    });
+  
+    function findPos(obj) {
+      //finding position on clicked button
+      let curleft = (curtop = 0);
+      if (obj.offsetParent) {
+        do {
+          curleft += obj.offsetLeft;
+          curtop += obj.offsetTop;
+        } while ((obj = obj.offsetParent));
+        {
+          return [curleft, curtop];
+        }
+      }
+    }
