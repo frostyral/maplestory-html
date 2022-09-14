@@ -5,13 +5,13 @@
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
-  height: 550px;
+  height: 600px;
   margin-bottom: 0px;
   /* The dots/bullets/indicators */
 }
 .slideshow-container .slideshow-button {
   position: relative;
-  bottom: 60px;
+  bottom: 70px;
   background-color: #d53414;
   color: white;
   text-decoration: none;
@@ -36,13 +36,13 @@
   display: none;
 }
 .slideshow-container .slideshow_image {
-  height: 550px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
   object-position: 100% 20;
 }
 .slideshow-container .dots {
-  bottom: 70px;
+  bottom: 80px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -73,4 +73,78 @@
   to {
     opacity: 1;
   }
+}
+.section-news {
+  background-image: url('../media/news_background.jpg');
+  background-repeat: round;
+  width: 100%;
+  height: 1000px;
+  padding: 100px 0px;
+}
+.section-news .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.section-news .box .card {
+  width: 524px;
+  height: 524px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 20px;
+}
+.section-news .box .card .card-image {
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.section-news .box .card .card-textbox {
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section-news .box .card .card-textbox .card-title {
+  font-weight: bold;
+  font-size: 26px;
+  color: black;
+  text-decoration: none;
+}
+.section-news .box .card .card-textbox .card-title:hover {
+  color: #d53414;
+}
+.section-news .box .card .card-textbox p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+.section-news .box .card .card-textbox .card-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex: row;
+  flex-direction: row;
+}
+.section-news .box .card .card-textbox .card-footer .timestamp {
+  position: relative;
+  bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  width: fit-content;
+  color: #878282;
+  margin-bottom: 0;
+  padding-top: 0px;
+}
+.section-news .box .card .card-textbox .card-footer .card-button {
+  position: relative;
+  left: 290px;
+  bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-align: right;
+  color: black;
+  font-size: 18px;
+}
+.section-news .box .card .card-textbox .card-footer .card-button:hover {
+  color: #d53414;
 }
