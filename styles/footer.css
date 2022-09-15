@@ -22,7 +22,7 @@ footer ul li a {
   text-decoration: none;
   text-transform: capitalize;
 }
-footer ul li a:hover {
+footer a:hover {
   color: red;
 }
 footer ul img {

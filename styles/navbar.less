@@ -10,49 +10,30 @@ nav {
   text-align: center;
   width: 100%;
   padding: 20px 20px 20px 20px;
-
-  ul li {
-    margin-top: 30px;
-    margin-right: 40px;
-    list-style-type: none;
-    display: inline-block;
-  }
-
   ul img {
     position: relative;
     top: 10px;
     width: 9rem;
     margin-right: 40px;
   }
-
   ul img:hover {
     cursor: pointer;
   }
-
   ul li {
     margin-top: 30px;
     margin-right: 40px;
     list-style-type: none;
     display: inline-block;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    a:hover {
+      color: red;
+    }
   }
-
-  ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: capitalize;
-  }
-  ul li a:hover {
-    color: red;
-  }
-
-  ul .social .socialbuttons i {
-    color: blue;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 40px;
-  }
-
   button {
     position: relative;
     bottom: 5px;
@@ -64,24 +45,10 @@ nav {
     border-radius: 5px;
     font-size: 20px;
   }
-
   button:hover {
     background-color: red;
     color: white;
     border: 2px solid #f9004d;
-    cursor: pointer;
-    transition: transform 1s;
-  }
-
-  i {
-    width: 100px;
-    color: white;
-    margin-right: 20px;
-    font-size: 22px;
-  }
-
-  i:hover {
-    color: red;
     cursor: pointer;
     transition: transform 1s;
   }

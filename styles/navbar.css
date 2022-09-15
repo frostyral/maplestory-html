@@ -9,12 +9,6 @@ nav {
   width: 100%;
   padding: 20px 20px 20px 20px;
 }
-nav ul li {
-  margin-top: 30px;
-  margin-right: 40px;
-  list-style-type: none;
-  display: inline-block;
-}
 nav ul img {
   position: relative;
   top: 10px;
@@ -39,12 +33,6 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
-nav ul .social .socialbuttons i {
-  color: blue;
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 40px;
-}
 nav button {
   position: relative;
   bottom: 5px;
@@ -60,17 +48,6 @@ nav button:hover {
   background-color: red;
   color: white;
   border: 2px solid #f9004d;
-  cursor: pointer;
-  transition: transform 1s;
-}
-nav i {
-  width: 100px;
-  color: white;
-  margin-right: 20px;
-  font-size: 22px;
-}
-nav i:hover {
-  color: red;
   cursor: pointer;
   transition: transform 1s;
 }

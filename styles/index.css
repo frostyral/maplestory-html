@@ -9,6 +9,15 @@
   margin-bottom: 0px;
   /* The dots/bullets/indicators */
 }
+.slideshow-container .mySlides {
+  display: none;
+}
+.slideshow-container .mySlides .slideshow_image {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 20;
+}
 .slideshow-container .slideshow-button {
   position: relative;
   bottom: 70px;
@@ -16,7 +25,7 @@
   color: white;
   text-decoration: none;
   border: 2px solid black;
-  padding: 10px 40px;
+  padding: 15px 40px;
   border-radius: 5px;
   font-size: 22px;
   font-weight: bold;
@@ -31,15 +40,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.slideshow-container .mySlides {
-  display: none;
-}
-.slideshow-container .slideshow_image {
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
-  object-position: 100% 20;
 }
 .slideshow-container .dots {
   bottom: 80px;
@@ -74,6 +74,7 @@
     opacity: 1;
   }
 }
+/* Section News Start */
 .section-news {
   background-image: url('../media/news_background.jpg');
   background-repeat: round;
@@ -84,6 +85,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.section-news h2 {
+  position: relative;
+  bottom: 30px;
+  text-align: left;
+  font-size: 32px;
 }
 .section-news .box-featured-news {
   display: flex;
@@ -119,7 +126,11 @@
   color: black;
   text-decoration: none;
 }
-.section-news .box-featured-news .card .card-textbox .card-title:hover {
+.section-news
+  .box-featured-news
+  .card
+  .card-textbox
+  .card-title:hover {
   color: #d53414;
 }
 .section-news .box-featured-news .card .card-textbox p {
@@ -134,27 +145,44 @@
   flex: row;
   flex-direction: row;
 }
-.section-news .box-featured-news .card .card-textbox .card-footer .timestamp {
+.section-news
+  .box-featured-news
+  .card
+  .card-textbox
+  .card-footer
+  .timestamp {
   position: relative;
   bottom: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',
+    sans-serif;
   font-size: 18px;
   width: fit-content;
   color: #878282;
   margin-bottom: 0;
   padding-top: 0px;
 }
-.section-news .box-featured-news .card .card-textbox .card-footer .card-button {
+.section-news
+  .box-featured-news
+  .card
+  .card-textbox
+  .card-footer
+  .card-button {
   position: relative;
   left: 290px;
   bottom: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',
+    sans-serif;
   text-decoration: none;
   text-align: right;
   color: black;
   font-size: 18px;
 }
-.section-news .box-featured-news .card .card-textbox .card-footer .card-button:hover {
+.section-news
+  .box-featured-news
+  .card
+  .card-textbox
+  .card-footer
+  .card-button:hover {
   color: #d53414;
 }
 .section-news .box-update-news {
@@ -207,25 +235,43 @@
   flex: row;
   flex-direction: row;
 }
-.section-news .box-update-news .card .card-textbox .card-footer .timestamp {
+.section-news
+  .box-update-news
+  .card
+  .card-textbox
+  .card-footer
+  .timestamp {
   position: relative;
   bottom: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',
+    sans-serif;
   font-size: 18px;
   color: #878282;
   margin-bottom: 0;
   padding-top: 0px;
 }
-.section-news .box-update-news .card .card-textbox .card-footer .card-button {
+.section-news
+  .box-update-news
+  .card
+  .card-textbox
+  .card-footer
+  .card-button {
   position: relative;
   left: 435px;
   bottom: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',
+    sans-serif;
   text-decoration: none;
   text-align: right;
   color: black;
   font-size: 18px;
 }
-.section-news .box-update-news .card .card-textbox .card-footer .card-button:hover {
+.section-news
+  .box-update-news
+  .card
+  .card-textbox
+  .card-footer
+  .card-button:hover {
   color: #d53414;
 }
+/* News Section End */
