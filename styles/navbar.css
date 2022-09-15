@@ -39,9 +39,11 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
-nav ul social {
+nav ul .social .socialbuttons i {
+  color: blue;
   margin-left: 40px;
   margin-right: 40px;
+  font-size: 40px;
 }
 nav button {
   position: relative;
@@ -62,7 +64,8 @@ nav button:hover {
   transition: transform 1s;
 }
 nav i {
-  color: lightgray;
+  width: 100px;
+  color: white;
   margin-right: 20px;
   font-size: 22px;
 }
